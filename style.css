@@ -1,0 +1,51 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1e;
+  --muted: #6b6b70;
+  --accent: #18a97b;
+  --border: #e6e6ea;
+  --card: #f7f8fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e9eaec;
+    --muted: #9a9ba0;
+    --accent: #39c892;
+    --border: #2a2d33;
+    --card: #1c1f24;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+header.site { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 28px; }
+header.site .brand { font-weight: 800; color: var(--accent); font-size: 20px; letter-spacing: .3px; }
+header.site h1 { font-size: 24px; margin: 10px 0 4px; }
+header.site .date { color: var(--muted); font-size: 14px; margin: 0; }
+h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 8px; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+p, li { font-size: 16px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+.muted { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14.5px; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--card); font-weight: 700; white-space: nowrap; }
+.note { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin: 16px 0; font-size: 15px; }
+footer.site { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 16px; color: var(--muted); font-size: 14px; }
+footer.site a { margin-right: 14px; }
+ul { padding-left: 1.2em; }
+.cards { list-style: none; padding: 0; margin: 24px 0; }
+.cards li { border: 1px solid var(--border); border-radius: 12px; margin: 10px 0; }
+.cards a { display: block; padding: 16px 18px; text-decoration: none; color: var(--fg); }
+.cards a:hover { background: var(--card); }
+.cards .t { font-weight: 700; color: var(--accent); }
+.cards .d { color: var(--muted); font-size: 14px; margin-top: 2px; }

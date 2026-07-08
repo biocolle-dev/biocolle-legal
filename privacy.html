@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — BioColle（ビオコレ）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="brand"><a href="index.html" style="text-decoration:none;color:var(--accent)">BioColle ビオコレ</a></div>
+    <h1>プライバシーポリシー</h1>
+    <p class="date">制定日：2026年7月19日 ／ 事業者：林 勇介（個人開発者）</p>
+  </header>
+
+  <h2>1. はじめに</h2>
+  <p>BioColle（以下「本アプリ」）は、身近な生きものを撮影して図鑑コレクションを楽しむ教育向けアプリです。本ポリシーは、本アプリが取得する情報と、その利用・管理方法を説明します。本アプリは<strong>アカウント登録を必要とせず、氏名・メールアドレス等の個人を特定する情報を取得しません</strong>。</p>
+
+  <h2>2. 取得する情報</h2>
+  <table>
+    <thead><tr><th>情報</th><th>取得の有無・方法</th><th>目的</th></tr></thead>
+    <tbody>
+      <tr><td>撮影した写真</td><td>生きもの判別のため、撮影画像を当社バックエンド経由でAI判別サービス（Google Gemini）へ送信します。<strong>判別後、送信した画像は破棄されます。</strong></td><td>生きものの種類判別（アプリ機能）</td></tr>
+      <tr><td>端末内に残す写真</td><td>カード表示と実写真の切替のため、撮影画像の複製を<strong>お使いの端末内にのみ保存</strong>します（サーバーには送信しません）。保存時に<strong>位置情報・撮影日時等のメタデータ（EXIF/GPS）を除去</strong>し、端末バックアップの対象外に設定します。</td><td>カード⇔写真の切替表示</td></tr>
+      <tr><td>コレクション記録（種名・確信度・取得日時）</td><td>既定では<strong>お使いの端末内にのみ保存</strong>します。<strong>「研究データの提供」に同意（オプトイン）した場合に限り</strong>、個人を特定しない形で当社バックエンドへ同期します。</td><td>コレクション管理／（同意時のみ）生きもの分布の学習・研究</td></tr>
+      <tr><td>匿名の端末識別トークン</td><td>サーバー機能（判別回数の管理等）のため、氏名等と結びつかない匿名トークンを利用します。</td><td>不正防止・利用回数管理</td></tr>
+      <tr><td>購入・サブスクリプション情報</td><td>課金はAppleのApp Storeを通じて処理されます。当社は購入の有効性（エンタイトルメント）のみを保持します。</td><td>有料機能の提供</td></tr>
+      <tr><td>広告関連情報</td><td>広告配信（Google AdMob）のため、広告SDKが端末識別子・利用データを取得する場合があります。<strong>お子さま（小学生以下）には非パーソナライズ広告のみ</strong>を配信します。</td><td>広告配信（無料プラン）</td></tr>
+      <tr><td>位置情報</td><td><strong>本アプリは位置情報を取得しません。</strong>将来のバージョンで採取地の「おおよその地域」を扱う場合は、事前に本ポリシーを改定し、権限取得のうえ、正確な座標は保持しません。</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. 第三者への提供・委託</h2>
+  <p>本アプリは、以下のサービスを機能提供のために利用します。各社の取り扱いは各社のプライバシーポリシーに従います。</p>
+  <ul>
+    <li><strong>Google（Gemini Vision）</strong>：撮影画像の生きもの判別処理（判別後に破棄）。</li>
+    <li><strong>Google（AdMob）</strong>：広告配信（無料プラン）。</li>
+    <li><strong>クラウドインフラ（Render 等）</strong>：バックエンドの稼働。</li>
+    <li><strong>Apple（App Store / StoreKit）</strong>：アプリ配信・課金処理。</li>
+  </ul>
+  <p>上記のほか、<strong>法令に基づく場合を除き、取得した情報を第三者に販売・提供しません</strong>。研究機関へのデータ提供は、「研究データの提供」に同意した利用者の<strong>個人を特定できない</strong>コレクション記録（種名・確信度・日時等）に限ります。<strong>氏名・メールアドレス・写真・正確な位置などは一切提供しません。</strong></p>
+
+  <h2>4. お子さまのプライバシー</h2>
+  <p>本アプリは、お子さまの個人情報を取得しません。購入導線・年齢設定等には<strong>保護者確認（ペアレンタルゲート）</strong>を設けています。お子さまには非パーソナライズ広告のみを配信します。</p>
+
+  <h2>5. 利用者の選択・権利</h2>
+  <ul>
+    <li><strong>研究データの提供</strong>は既定でオフです。設定画面からいつでもオン/オフでき、<strong>オフにすると同期を停止し、提供済みの同期分も削除</strong>します。</li>
+    <li>コレクションカードは、アプリ内でいつでも削除できます（削除は端末・（同意時は）サーバー双方に反映）。</li>
+    <li>アプリを削除すると、端末内に保存されたデータ（写真・コレクション）は削除されます。</li>
+  </ul>
+
+  <h2>6. データの保管とセキュリティ</h2>
+  <p>通信はHTTPSで暗号化します。端末内データはOSの保護領域に保存します。サーバー鍵・APIキーは端末に置かず、バックエンドで秘匿します。</p>
+
+  <h2>7. 本ポリシーの改定</h2>
+  <p>内容を変更する場合は、本ページを更新します。重要な変更はアプリ内等でお知らせします。</p>
+
+  <h2>8. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは、<a href="support.html">サポートページ</a>記載の連絡先（biocolle@icloud.com）までご連絡ください。</p>
+
+  <footer class="site">
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="support.html">サポート</a>
+    <div style="margin-top:8px">© 2026 林 勇介</div>
+  </footer>
+</div>
+</body>
+</html>
